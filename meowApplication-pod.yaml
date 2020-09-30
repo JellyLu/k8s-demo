@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: meow-app
+  labels:
+    app: meow-app
+spec:
+  containers:
+    - name: meow-app-container
+      image: janesee3/meow-application:1
