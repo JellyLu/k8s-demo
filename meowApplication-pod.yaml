@@ -8,3 +8,8 @@ spec:
   containers:
     - name: meow-app-container
       image: janesee3/meow-application:1
+      env:
+        - name: "DO_YOU_LIKE_CATS"
+          value: "YES"
+        - name: "CATS_UTL"
+          value: "http://cat-app:8080/cats"
