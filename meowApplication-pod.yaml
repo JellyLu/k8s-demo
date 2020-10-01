@@ -11,5 +11,5 @@ spec:
       env:
         - name: "DO_YOU_LIKE_CATS"
           value: "YES"
-        - name: "CATS_UTL"
+        - name: "CATS_URL"
           value: "http://cat-app:8080/cats"
