@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  creationTimestamp: 2020-10-01T20:22:38Z
+  name: meow-env-config-map
+  namespace: default
+  resourceVersion: "1"
+data:
+  DO_YOU_LIKE_CATS: "YES"
+  CATS_URL: "http://cat-app:8080/cats"

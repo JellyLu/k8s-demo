@@ -19,6 +19,12 @@ spec:
             - containerPort: 8080
           env:
             - name: "DO_YOU_LIKE_CATS"
-              value: "YES"
+              valueFrom:
+                configMapKeyRef:
+                  name: meow-env-config-map
+                  key: DO_YOU_LIKE_CATS
             - name: "CATS_URL"
-              value: "http://cat-app:8080/cats"
+              valueFrom:
+                configMapKeyRef:
+                  name: meow-env-config-map
+                  key: CATS_URL
